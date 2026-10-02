@@ -29,6 +29,9 @@ myapp/
 ├─ cmd/myapp/main.go
 ├─ internal/app/app.go
 ├─ utils/logger.go
+├─ docs/
+│  ├─ server-run.png
+│  └─ curl-check.png
 ├─ go.mod
 └─ README.md
 ```
@@ -39,6 +42,16 @@ myapp/
 |--------|--------------------------------------------|
 | `/`    | текст `Hello, Go project structure!`       |
 | `/ping`| JSON `{ "status":"ok", "time":"<RFC3339>" }` |
+
+## Скриншоты проверки
+
+### Запуск сервера
+
+![Запуск go run ./cmd/myapp](docs/server-run.png)
+
+### Ответы `/` и `/ping`
+
+![curl -i для / и /ping](docs/curl-check.png)
 
 ## Куда класть артефакты (мини-эссе)
 
